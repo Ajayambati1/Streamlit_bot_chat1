@@ -12,7 +12,7 @@ def combinations_sheets(list_of_sheets):
     return combo_sheets
 
 def excel_data(path,sheetslist):
-    cols=sorted(list({j for i in sheetlist for j in pd.read_excel(path,i).columns}))
+    cols=sorted(list({j for i in sheetslist for j in pd.read_excel(path,i).columns}))
     merge_dataframe=pd.DataFrame(columns=cols)
     for i in sheetslist:
         read_data=pd.read_excel(path,i)
