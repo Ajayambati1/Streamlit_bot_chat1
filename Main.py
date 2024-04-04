@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import hmac
 from itertools import *
-st.title("De-Duplicating Multiple Sheets in a Excel File")
+st.title("Merging multiple Sheets in a Excel File")
 
 def combinations_sheets(list_of_sheets):
     combo_sheets=[]
