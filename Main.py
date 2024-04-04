@@ -21,7 +21,7 @@ def excel_data(path,sheetslist):
     return merge_dataframe
 
 
-uploaded_file=st.sidebar.file_uploader("Upload your Excel File",type=['csv','xlsx'])
+uploaded_file=st.sidebar.file_uploader("Upload your Excel File",type=['xlsx'])
 if uploaded_file is not None:
     read_file=pd.ExcelFile(uploaded_file,engine='openpyxl')
     number_of_sheets=read_file.sheet_names
